@@ -7,11 +7,11 @@ print('Welcome To Atm')
 def balance():
     #connnection between python and pgadmin
     conn = psycopg2.connect(
-        host="localhost",
+        host="yourhost",
         port=5432,
-        database="new1",
-        user="postgres",
-        password="Avinash"
+        database="your databse name",
+        user="your user name",
+        password="your  password"
     )
 
     # Create a cursor object
@@ -168,6 +168,3 @@ while i<=3:
         else:
             print(f'sorry you are not valid user {attempt} attempt left : enter correct pin ')
         i+=1
-
-
-
